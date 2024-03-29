@@ -20,12 +20,19 @@ return (
                         navbarScroll
                     >
                     <NavLink className ="nav-link" to="/">Home</NavLink>     
+                    <a className ="nav-link" href="http://github.com/PrathameshBhagat">GitHub</a>
+                    <a className ="nav-link" href="http://linkedin.com/in/prathameshvivekbhagat">LinkedIn</a>
+                    <a className ="nav-link" href="http://leetcode.com/Prathamesh_Bhagat">LeetCode</a>
+                    <a className ="nav-link" href="https://t.me/+917058031648/Hello Prathamesh">Telegram</a>
                 </Nav>
                 <a href="tel:+917058031648">
                     <Button variant="outline-info" className="me-2">Call</Button>
                 </a>
                 <a href="mailto:prathameshbhagat0608@gmail.com">
-                    <Button variant="outline-info">Mail</Button>
+                    <Button variant="outline-info" className="me-2">Mail</Button>
+                </a>
+                <a href="https://wa.me/7058031648">
+                    <Button variant="outline-info" className="me-2">WhatsApp</Button>
                 </a>
             </Navbar.Collapse>
         </Container>

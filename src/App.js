@@ -11,23 +11,34 @@ function App() {
   const [movies, setMovies] = useState();
 
   const getMovies = async () =>{
-      const response = [{
-                      title:"prat", 
-                      trailerLink:"https://www.youtube.com/watch?v=5PdEmeopJVQ", 
-                      poster:"https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg",
-                    },
+    const response = [{
+                        title:"Java",
+                        trailerLink:"https://www.youtube.com/",
+                        poster:"https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg"},
+                      { 
+                        title:"Java Script",
+                        trailerLink:"https://www.youtube.com/",    
+                        poster:"/JavaScript.png"},
                       {
-                        title:"prat",
-                        trailerLink:"https://www.youtube.com/watch?v=5PdEmeopJVQ",                        
-                        poster:"https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?cs=srgb&dl=pexels-anjana-c-674010.jpg&fm=jpg"},
+                        title:"Python",
+                        trailerLink:"https://www.youtube.com/",    
+                        poster:"/python.png"},
                       {
-                        title:"prat",
-                        trailerLink:"https://www.youtube.com/watch?v=5PdEmeopJVQ",    
-                        poster:"https://static.javatpoint.com/core/images/java-logo1.png"},
-                        {
-                          title:"prat",
-                          trailerLink:"https://www.youtube.com/watch?v=5PdEmeopJVQ",
-                          poster:"https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg"}];
+                        title:"HTML5",
+                        trailerLink:"https://www.youtube.com/",    
+                        poster:"/html5.png"},
+                      {
+                        title:"PHP",
+                        trailerLink:"https://www.youtube.com/",    
+                        poster:"/php.png"},
+                      {
+                        title:"CSS",
+                        trailerLink:"https://www.youtube.com/",    
+                        poster:"/css.png"},
+                      {
+                        title:"Prathamesh Bhagat",
+                        trailerLink:"https://www.youtube.com/",                        
+                        poster:"https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?cs=srgb&dl=pexels-anjana-c-674010.jpg&fm=jpg"}];
 
       setMovies(response);
   }

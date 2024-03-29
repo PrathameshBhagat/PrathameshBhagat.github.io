@@ -4,9 +4,11 @@
 }
 .movie-poster{
     height: 300px;
+    width: 300px;
     border: 1px solid gold;
     border-radius: 10px;
     overflow: hidden;
+    background-image: url('https://placehold.co/400x400/505050/505050');
 }
 .movie-poster > img{
     height: 100%;
@@ -15,7 +17,7 @@
 }
 .movie-card-container{
     height: 550px;
-    background-color: black;
+    background-color: rgb(50,50,50);
 }
 .movie-card{
     background-repeat: no-repeat;
@@ -66,6 +68,9 @@
     .movie-detail{
         flex-direction: column;
         align-items: center;
-        top:20px;
+        top:12%;
+    }  
+    .movie-title{
+        margin: 7%    
     }
 }

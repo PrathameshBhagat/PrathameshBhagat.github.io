@@ -9,13 +9,6 @@ import Button from 'react-bootstrap/Button';
 
 const Hero = ({movies}) => {
 
-    const navigate = useNavigate();
-
-    function reviews(movieId)
-    {
-        navigate(`/Reviews/${movieId}`);
-    }
-
   return (
     <div className ='movie-carousel-container'>
       <Carousel>
@@ -30,7 +23,7 @@ const Hero = ({movies}) => {
                                         <img src={movie.poster} alt="" />
                                     </div>
                                     <div className="movie-title">
-                                        <h4>{movie.title}</h4>
+                                        <h1>{movie.title}</h1>
                                     </div>
                                     <div className="movie-buttons-container">
                                         <Link to={`/Trailer/${movie.trailerLink.substring(movie.trailerLink.length - 11)}`}>
@@ -42,7 +35,9 @@ const Hero = ({movies}) => {
                                         </Link>
 
                                         <div className="movie-review-button-container">
-                                            <Button variant ="info" onClick={() => reviews(movie.imdbId)} >Reviews</Button>
+                                            <a href="https://wa.me/7058031648" >
+                                                <Button variant ="info" className="btn btn-primary">Connect</Button>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
