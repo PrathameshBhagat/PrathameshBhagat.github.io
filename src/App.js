@@ -50,7 +50,7 @@ function App() {
       <Header/>
       <Routes>
           <Route >
-            <Route path="/" element={<Hero movies={movies} />} ></Route>
+            <Route path="/" element={<><Hero movies={movies} /></>} ></Route>
             <Route path="/Trailer/:ytTrailerId" element={<Trailer/>}></Route>
             <Route path="*" element = {<NotFound/>}></Route>
           </Route>

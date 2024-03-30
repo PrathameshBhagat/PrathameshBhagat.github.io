@@ -11,6 +11,7 @@ const Hero = ({movies}) => {
 
   return (
     <div className ='movie-carousel-container'>
+        <h1>Programming Languages</h1>
       <Carousel>
         {
             movies?.map((movie) =>{
