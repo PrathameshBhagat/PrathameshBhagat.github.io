@@ -17,7 +17,7 @@
 }
 .movie-card-container{
     height: 550px;
-    background-color: rgb(50,50,50);
+    background-color: rgb(0,0,0);
 }
 .movie-card{
     background-repeat: no-repeat;
@@ -28,7 +28,7 @@
 }
 .movie-detail{
     position: absolute;
-    top:200px;
+    top: 20%;
     display: flex;
     justify-content: space-evenly;
     width:100%;
@@ -63,14 +63,12 @@
     font-size: 4rem;
     color:white;
 }
-h1{
-    text-align: center;
-}
+
 @media only screen and (max-width: 800px) {
     .movie-detail{
         flex-direction: column;
         align-items: center;
-        top:12%;
+        top:7%;
     }  
     .movie-title{
         margin: 7%    

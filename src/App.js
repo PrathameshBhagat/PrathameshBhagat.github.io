@@ -1,6 +1,7 @@
 import './App.css';
 import {useState, useEffect} from 'react';
 import {Routes, Route} from 'react-router-dom';
+import Projects from './components/projects/Projects';
 import Hero from './components/hero/Hero';
 import Header from './components/header/Header';
 import Trailer from './components/trailer/Trailer';
@@ -50,7 +51,7 @@ function App() {
       <Header/>
       <Routes>
           <Route >
-            <Route path="/" element={<><Hero movies={movies} /></>} ></Route>
+            <Route path="/" element={<><Hero movies={movies} /><Projects/></>} ></Route>
             <Route path="/Trailer/:ytTrailerId" element={<Trailer/>}></Route>
             <Route path="*" element = {<NotFound/>}></Route>
           </Route>

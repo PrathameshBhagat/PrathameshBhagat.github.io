@@ -11,7 +11,7 @@ const Hero = ({movies}) => {
 
   return (
     <div className ='movie-carousel-container'>
-        <h1>Programming Languages</h1>
+      <h1 style={{marginTop:"5%",backgroundColor:"red"}}>Programming<br/> Languages</h1>
       <Carousel>
         {
             movies?.map((movie) =>{

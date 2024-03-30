@@ -13,12 +13,14 @@
 }/*flex-direction: column;*/
 
 h1 {
+  margin:  auto;
   font-size: 3rem;
   letter-spacing: 0.9px;
+  text-align: center;
   background: linear-gradient(
     90deg,
     rgba(249, 211, 180, 1) 0%,
-    rgba(249, 211, 180, 0) 100%
+    rgba(249, 211, 180, 0) 130%
   );
   background-clip: text;
   -webkit-background-clip: text;
