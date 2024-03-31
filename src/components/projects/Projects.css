@@ -29,9 +29,9 @@ h1 {
 }
 
 .project {
-  width: 310px;
-  height: 460px;
-  margin: 1.5rem;
+  width: 35vw;
+  height: 90vh;
+  margin: 3rem;
 
   position: relative;
   border-radius: 12px;
@@ -69,7 +69,7 @@ h1 {
 .project div:nth-of-type(3) {
   z-index: 2;
   background-color: #343739;
-  padding: 16px 24px 24px 24px;
+  padding: 10%;
 
   position: absolute;
   bottom: 0;
@@ -113,8 +113,7 @@ h1 {
 
 @media screen and (max-width: 400px) {
   .Projects {
-    padding: 1rem 1rem;
-  flex-direction: column;
+    padding: 0.75rem 0.75rem;
   }
 
   h1 {
@@ -125,8 +124,12 @@ h1 {
     margin-top: 2rem;
   }
 
+  .project:hover div:nth-of-type(3), .project div:nth-of-type(3) {
+    padding: 1% 1% 1% 10%;
+  }
   .project {
-    width: "50%";
-    margin: 1rem;
+    width: 50%;
+    margin: 0.5rem;
+    height: 30vh;
   }
 }
