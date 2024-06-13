@@ -1,8 +1,16 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700");
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
 
-.Projects {
-    /*background-color: #212426;*/
+.project-container { 
+background-image: url("/public/backgound3.jpg"); 
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover; 
+margin-top: 10% ;
+padding: 0% 5% 10% 5%; 
+}
+.project-row { 
   font-family: var(--font-roboto);
   --font-roboto: "Roboto Slab", serif;
   --font-raleway: "Raleway", sans-serif;
@@ -20,7 +28,7 @@ h1 {
   background: linear-gradient(
     90deg,
     rgba(249, 211, 180, 1) 0%,
-    rgba(249, 211, 180, 0) 130%
+    rgba(249, 211, 180, 1) 130%
   );
   background-clip: text;
   -webkit-background-clip: text;

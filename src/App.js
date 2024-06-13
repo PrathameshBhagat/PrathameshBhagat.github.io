@@ -37,9 +37,9 @@ function App() {
                         trailerLink:"https://www.youtube.com/",    
                         poster:"/css.png"},
                       {
-                        title:"Prathamesh Bhagat",
+                        title:"SQL",
                         trailerLink:"https://www.youtube.com/",                        
-                        poster:"https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?cs=srgb&dl=pexels-anjana-c-674010.jpg&fm=jpg"}];
+                        poster:"/SQL.png"}];
 
       setMovies(response);
   }

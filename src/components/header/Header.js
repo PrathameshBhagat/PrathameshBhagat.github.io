@@ -19,7 +19,6 @@ return (
                         style={{maxHeight: '100px'}}
                         navbarScroll
                     >
-                    <NavLink className ="nav-link" to="/">Home</NavLink>     
                     <a className ="nav-link" href="http://github.com/PrathameshBhagat">GitHub</a>
                     <a className ="nav-link" href="http://linkedin.com/in/prathameshvivekbhagat">LinkedIn</a>
                     <a className ="nav-link" href="http://leetcode.com/Prathamesh_Bhagat">LeetCode</a>
