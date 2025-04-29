@@ -6,6 +6,7 @@ import Hero from './components/hero/Hero';
 import Header from './components/header/Header';
 import Trailer from './components/trailer/Trailer';
 import NotFound from './components/notFound/NotFound';
+import Fundraise from './components/fundraise/fundraise';
 
 function App() {
 
@@ -54,6 +55,7 @@ function App() {
             <Route path="/" element={<><Hero movies={movies} /><Projects/></>} ></Route>
             <Route path="/Trailer/:ytTrailerId" element={<Trailer/>}></Route>
             <Route path="*" element = {<NotFound/>}></Route>
+            <Route path="/fundraise" element = {<Fundraise/>}></Route>
           </Route>
       </Routes>
 
