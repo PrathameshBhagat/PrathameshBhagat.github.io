@@ -7,6 +7,7 @@ import Header from './components/header/Header';
 import Trailer from './components/trailer/Trailer';
 import NotFound from './components/notFound/NotFound';
 import Fundraise from './components/fundraise/fundraise';
+import Footer from './components/footer/footer';
 
 function App() {
 
@@ -52,7 +53,7 @@ function App() {
       <Header/>
       <Routes>
           <Route >
-            <Route path="/" element={<><Hero movies={movies} /><Projects/></>} ></Route>
+            <Route path="/" element={<><Hero movies={movies} /><Projects/><Footer/></>} ></Route>
             <Route path="/Trailer/:ytTrailerId" element={<Trailer/>}></Route>
             <Route path="*" element = {<NotFound/>}></Route>
             <Route path="/fundraise" element = {<Fundraise/>}></Route>
