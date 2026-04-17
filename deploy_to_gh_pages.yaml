@@ -1,0 +1,13 @@
+name: "Build and deploy to GH pages site"
+
+on:
+  push:
+
+jobs: 
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+  
+      
+
+    
