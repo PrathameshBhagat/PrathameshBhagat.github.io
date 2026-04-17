@@ -20,7 +20,7 @@ const Me = ()=>{
     
             <div className ='me-container'>
                 <h3  >Hi, I am </h3>
-                <h1> Prathameshhj Bhagat</h1>
+                <h1> Prathamesh Bhagat</h1>
                 <h6> 
                     A versatile programmer, creative in crafting effective software to 
                     propel competitive advantage.  
