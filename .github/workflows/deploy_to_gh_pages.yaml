@@ -3,6 +3,10 @@ name: "Build and deploy to GH pages site"
 on:
   push:
 
+permissions: 
+  contents: read
+  pages: write
+
 jobs: 
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -17,7 +21,10 @@ jobs:
           npm i
           npm build
       - name: Deploy
-        uses: 
+        uses:  JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: build
+          
       
     
   
