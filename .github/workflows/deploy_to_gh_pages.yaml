@@ -3,7 +3,8 @@ name: "Build and deploy to GH pages site"
 on:
   push:
     branches:
-      - main, gh-page-deploy
+      - main
+      - gh-page-deploy
 
 permissions: 
   contents: write
