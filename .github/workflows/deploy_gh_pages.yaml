@@ -1,0 +1,39 @@
+name: "Build and deploy to GH pages site"
+
+on:
+  push:
+    branches:
+      - main
+
+permissions: 
+  contents: write
+  pages: write
+
+jobs: 
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check if we should deploy...
+        run: |
+          if [ "${{vars.RUN_DEPLOY_GH_ACTION}}" != "true" ]; then
+            echo "Error: RUN_DEPLOY_GH_ACTION is set not set to true hence not deploying..." 
+            exit 1
+          fi
+
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 
+        uses: actions/setup-node@v6
+
+      - name: Install and build
+        run : |
+          npm i
+          npm run build
+
+      - name: Deploy
+        uses:  JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: build
+          commit-message: Deploy from ${{ github.ref_name }} (${{ github.sha }})
