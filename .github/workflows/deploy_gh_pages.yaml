@@ -37,3 +37,56 @@ jobs:
         with:
           folder: build
           commit-message: Deploy from ${{ github.ref_name }} (${{ github.sha }})
+
+
+# on:
+#   push:
+#     branches:
+#       - main
+#       - dev
+
+# permissions:
+#   contents: write
+
+# jobs:
+#   build-and-deploy:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout code
+#         uses: actions/checkout@v4
+
+#       - name: Setup Node.js
+#         uses: actions/setup-node@v4
+#         with:
+#           node-version: 20
+#           cache: 'npm'
+
+#       - name: Install dependencies
+#         run: npm ci
+
+#       - name: Build Production (main)
+#         if: github.ref == 'refs/heads/main'
+#         run: npm run build
+
+#       - name: Build Staging (dev)
+#         if: github.ref == 'refs/heads/dev'
+#         env:
+#           PUBLIC_URL: /${{ github.event.repository.name }}/dev
+#         run: npm run build
+
+#       - name: Deploy Main to root of gh-pages
+#         if: github.ref == 'refs/heads/main'
+#         uses: JamesIves/github-pages-deploy-action@v4
+#         with:
+#           branch: gh-pages
+#           folder: build
+#           clean: true
+#           clean-exclude: dev
+
+#       - name: Deploy Dev to /dev subfolder of gh-pages
+#         if: github.ref == 'refs/heads/dev'
+#         uses: JamesIves/github-pages-deploy-action@v4
+#         with:
+#           branch: gh-pages
+#           folder: build
+#           target-folder: dev
